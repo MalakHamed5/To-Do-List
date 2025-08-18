@@ -3,15 +3,23 @@ import 'package:to_do_list/core/config/theme/app_colors.dart';
 
 ThemeData getLightTheme() {
   return ThemeData(
-    scaffoldBackgroundColor: AppColors.backgroundColor,
-    brightness: Brightness.light,
-    colorScheme: ColorScheme.fromSeed(
+      //Basic
+      scaffoldBackgroundColor: AppColors.backgroundColor,
+      primaryColor: AppColors.primaryColor,
       brightness: Brightness.light,
-      seedColor: AppColors.appBarColor,
-    ),
-    textTheme: ThemeData.light().textTheme.apply(
-          bodyColor: AppColors.txt,
-          displayColor: AppColors.txt,
-        ),
-  );
+
+      //Color Scheme
+      colorScheme: ColorScheme.fromSeed(
+        brightness: Brightness.light,
+        seedColor: AppColors.primaryColor,
+      ),
+
+      //Text Theme
+      textTheme: ThemeData.light().textTheme.apply(
+            bodyColor: AppColors.txt,
+            displayColor: AppColors.txt,
+          ),
+
+      //AppBar theme
+      appBarTheme: AppBarTheme(backgroundColor: AppColors.primaryColor));
 }

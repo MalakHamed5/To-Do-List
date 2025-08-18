@@ -10,14 +10,14 @@ class TaskBloc extends Bloc<TaskEvent, TaskState> {
   TaskBloc() : super(TaskInitial()) {
     on<AddTaskEvent>((event, emit) {
       final model =
-          TaskModel(id: Uuid().v4() as int, text: event.text.toString());
+          TaskModel(id: const Uuid().v4(), text: event.text.toString());
       emit(UpdateTask([...state.taskList, model]));
     });
 
     on<DeleteTaskEvent>((event, emit) {
       final List<TaskModel> newList =
           state.taskList.where((task) => task.id != event.id).toList();
-          
+
       emit(UpdateTask(newList));
     });
 

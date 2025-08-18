@@ -14,13 +14,13 @@ class AddTaskEvent extends TaskEvent {
 }
 
 class DeleteTaskEvent extends TaskEvent {
-  final int id;
+  final String id;
 
   DeleteTaskEvent({required this.id});
 }
 
 class ToggleTaskEvent extends TaskEvent {
-  final int id;
+  final String id;
 
   ToggleTaskEvent(this.id);
 }

@@ -2,7 +2,7 @@
 import 'package:equatable/equatable.dart';
 
 class TaskModel extends Equatable {
-  final int id;
+  final String id;
   final String text;
   final bool isCompelete;
 
@@ -13,7 +13,7 @@ class TaskModel extends Equatable {
   List<Object?> get props => [id, text, isCompelete];
 
   TaskModel copyWith({
-    int? id,
+    String? id,
     String? text,
     bool? isCompelete,
   }) {

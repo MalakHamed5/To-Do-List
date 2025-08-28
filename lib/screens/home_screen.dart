@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:to_do_list/bloc/task_bloc.dart';
 import 'package:to_do_list/core/config/theme/app_colors.dart';
+import 'package:to_do_list/core/config/theme/theme_data/get_light_theme.dart';
 import 'package:to_do_list/widgets/dialog_box.dart';
 import 'package:to_do_list/widgets/list_tile_task.dart';
 
@@ -79,6 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         taskName: Text(
                           task.text,
                           style: TextStyle(
+                            fontSize: 20,
                             decoration: task.isCompelete
                                 ? TextDecoration.lineThrough
                                 : TextDecoration.none,

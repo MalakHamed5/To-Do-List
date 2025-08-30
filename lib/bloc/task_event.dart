@@ -6,6 +6,7 @@ sealed class TaskEvent extends Equatable {
   List<Object?> get props => [];
 }
 
+class LoadTasksEvent extends TaskEvent{}
 class AddTaskEvent extends TaskEvent {
   final String text;
   AddTaskEvent({
@@ -25,4 +26,3 @@ class ToggleTaskEvent extends TaskEvent {
   ToggleTaskEvent(this.id);
 }
 
-class EditTaskEvent extends TaskEvent {}

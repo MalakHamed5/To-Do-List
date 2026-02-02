@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:to_do_list/widgets/my_button.dart';
 
-import '../core/config/theme/app_colors.dart';
+import '../core/constant/app_colors.dart';
 
 class DialogBox extends StatelessWidget {
   final TextEditingController controller;

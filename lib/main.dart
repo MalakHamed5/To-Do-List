@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:to_do_list/bloc/task_bloc.dart';
-import 'package:to_do_list/core/config/theme/theme_data/get_light_theme.dart';
+import 'package:to_do_list/core/config/theme/get_light_theme.dart';
 import 'package:to_do_list/models/task_model.dart';
 import 'package:to_do_list/repo/task_repo.dart';
 

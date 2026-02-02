@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:to_do_list/bloc/task_bloc.dart';
-import 'package:to_do_list/core/config/theme/app_colors.dart';
+import 'package:to_do_list/core/constant/app_colors.dart';
 import 'package:to_do_list/widgets/dialog_box.dart';
 import 'package:to_do_list/widgets/list_tile_task.dart';
 import 'dart:developer';
